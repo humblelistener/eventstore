@@ -3,15 +3,17 @@
 
 FROM debian:jessie
 
-ENV ES_VERSION v3.2.1
+ENV ES_VERSION v3.2.0
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update \
+    && apt-get install -qq apt-utils \
     && apt-get install -qq curl \
-    && apt-get install -qq apt-transport-https \
-    && apt-get install -qq apt-utils
+    && apt-get install -qq apt-transport-https
 
-RUN curl -sS https://apt-oss.geteventstore.com/eventstore.key | apt-key add - \
-  && echo "deb [arch=amd64] https://apt-oss.geteventstore.com/ubuntu/ trusty $ES_VERSION" > /etc/apt/sources.list.d/eventstore.list \
+RUN curl -sS https://apt-oss.geteventstore.com/eventstore.key | apt-key add -
+
+RUN echo "deb [arch=amd64] https://apt-oss.geteventstore.com/ubuntu/ trusty $ES_VERSION" > /etc/apt/sources.list.d/eventstore.list \
   && apt-get -qq update \
   && apt-get -qq install eventstore-oss
 
