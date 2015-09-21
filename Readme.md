@@ -1,4 +1,4 @@
-### Event store apparently didnt get install propery on pure debian jessie
+### Event store apparently didn't install properly on pure debian jessie
 ### Threw the following error
 
 ```
