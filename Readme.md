@@ -32,5 +32,8 @@ FROM kpadmanabhan/eventstore
 ```
 4. Ensure the dockerfile and evenstore.conf are in the same directory.
 
+*Note: Port exposing is currently limited, it can only use 2113 & 1113.*
+
+
 The image uses ONBUILD trigger to replace the configuration file.
 [Refer to ONBUILD section here](https://docs.docker.com/reference/builder/).

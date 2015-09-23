@@ -20,7 +20,7 @@ VOLUME /data/db /data/logs
 COPY eventstore.conf /etc/eventstore/
 
 # downstream builds can use their own evenstore.conf
-# ONBUILD COPY eventstore.conf /etc/eventstore/
+ONBUILD COPY eventstore.conf /etc/eventstore/
 
 EXPOSE 2113
 EXPOSE 1113
