@@ -4,7 +4,7 @@
 FROM ubuntu:14.04
 MAINTAINER P Karthikeyan <@humblelistener>
 
-ENV ES_VERSION main
+ENV ES_VERSION v3.2.0
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update \
