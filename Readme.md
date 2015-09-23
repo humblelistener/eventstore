@@ -41,3 +41,8 @@ FROM kpadmanabhan/eventstore
 
 The image uses ONBUILD trigger to replace the configuration file.
 [Refer to ONBUILD section here](https://docs.docker.com/reference/builder/).
+
+### Deploying event store on aws elastic beanstalk
+The repository contains a [sample folder](https://github.com/humblelistener/eventstore/tree/master/elastic-beanstalk-deploy-sample) that can be compressed and used to deploy on elastic beanstalk docker stack application environment.
+
+This is provided only as an example to use the docker image and is recommended only to quickly setup a development environment or an environment to spike the event store. _It does not solve the clustering challenges in deploying event store in docker_.
