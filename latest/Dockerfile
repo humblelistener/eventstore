@@ -2,6 +2,7 @@
 #Reference: http://docs.geteventstore.com/server/3.2.0/installing-from-debian-repositories/
 
 FROM ubuntu:14.04
+MAINTAINER P Karthikeyan <@humblelistener>
 
 ENV ES_VERSION v3.2.0
 ENV DEBIAN_FRONTEND noninteractive
