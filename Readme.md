@@ -1,4 +1,8 @@
-# Event store docker container (allows injecting your own event store configuration)
+# Event store docker container
+
+## Allows injecting your own event store configuration
+
+## Includes sample to deploy to elastic beanstalk single instance docker container
 
 ## Why another event store docker image?
 The docker containers out there have configurations pretty much set in them. This container will allow you to inject a configuration file (eventstore.conf).
