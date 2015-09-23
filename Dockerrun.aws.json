@@ -1,0 +1,24 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "kpadmanabhan/eventstore",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "HostPort": "2113",
+      "ContainerPort": "2113"
+    },
+    {
+      "HostPort": "1113",
+      "ContainerPort": "1113"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/data",
+      "ContainerDirectory": "/data"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}
