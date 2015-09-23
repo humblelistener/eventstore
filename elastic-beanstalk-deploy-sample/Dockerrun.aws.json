@@ -6,12 +6,7 @@
   },
   "Ports": [
     {
-      "HostPort": "2113",
       "ContainerPort": "2113"
-    },
-    {
-      "HostPort": "1113",
-      "ContainerPort": "1113"
     }
   ],
   "Volumes": [
